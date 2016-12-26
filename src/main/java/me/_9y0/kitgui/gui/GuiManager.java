@@ -41,7 +41,6 @@ public class GuiManager implements Listener {
 
 		for (Gui gui : guis) {
 			if (inventoryName.equals(gui.getName())) {
-				System.out.println("found interacted gui");
 				if (event instanceof InventoryClickEvent)
 					gui.onClick((InventoryClickEvent) event);
 				else if (event instanceof InventoryDragEvent)

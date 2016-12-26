@@ -8,16 +8,8 @@ import me._9y0.kitgui.gui.GuiManager;
 
 public class KitGuiPlugin extends JavaPlugin {
 
-	private static KitGuiPlugin instance;
-
-	public static KitGuiPlugin getInstance() {
-		return instance;
-	}
-
 	@Override
 	public void onEnable() {
-		instance = this;
-
 		registerListeners();
 		registerCommands();
 	}
@@ -30,9 +22,4 @@ public class KitGuiPlugin extends JavaPlugin {
 		getCommand("kitgui").setExecutor(new KitGUICommand());
 	}
 
-	@Override
-	public void onDisable() {
-
-		instance = null;
-	}
 }

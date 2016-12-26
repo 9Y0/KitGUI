@@ -11,7 +11,8 @@ public class KitGUICommand implements CommandExecutor {
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-		KitManager.getInstance().showGui((Player) sender);
+		if (sender instanceof Player)
+			KitManager.getInstance().showGui((Player) sender);
 		return true;
 	}
 
