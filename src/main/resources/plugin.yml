@@ -1,0 +1,8 @@
+name: KitGui
+main: me._9y0.kitgui.KitGuiPlugin
+version: ${project.version}
+authors: [9Y0]
+
+commands:
+  kitgui:
+    description: Show the kit GUI.
